@@ -1,0 +1,271 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav-bar {
+    width: 100%;
+    overflow: hidden;  
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right:0px;
+
+  }
+  
+  .nav-link  {
+    width: 120px;
+    display: flex;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 15px;;
+    color: white;
+    text-shadow: 2px 2px brown;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .nav-link:hover{
+      color: red;
+      background-color: black;
+      border-radius: 15px;
+  }
+  
+  
+   a {
+       
+    display: inline;
+    float: right;
+    margin: 6px;
+  }
+   
+li {
+    list-style: none;
+    padding: 20px 10px;
+    margin: 10px 10px;
+    
+}
+#home {
+    font-family: 'Sora', sans-serif;
+    margin: 2px 150px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.h-primary {
+    color: rgb(252, 243, 243);
+    font-size: 55px;
+    text-shadow: 2px 2px brown;
+    font-family: 'Lobster', cursive;
+}
+ul li{
+display: inline;
+font-size: 35px;
+color: white;
+text-shadow: 2px 2px brown;
+font-family: 'Lobster', cursive;
+
+
+}
+/*#btn {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    margin: 12px;
+    padding: 10px;
+    border: 2px solid gray;
+    box-shadow: 2px 2px brown;
+    border-radius: 5%;
+    cursor: pointer;
+}*/
+#btn{
+padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: burlywood;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+#btn:hover {background-color: brown}font-family: 'Sora', sans-serif;
+margin: 2px 150px;
+height: 405px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+#btn:active {
+  background-color: brown;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#home::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/dining.jpeg');
+    background-size: cover;
+    
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0,89;  
+}
+.menu-container {
+    width: 100%;
+    height: 400px;
+}
+#menu{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-top: 0px;
+    
+    
+}
+#menu .box {
+border: 2px solid brown;
+background-color: burlywood;
+margin: 5px;
+padding: 3px;
+
+/*border-radius: 20px;*/
+}
+#menu .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+   #menu .box img:hover {
+        transform: scaleX(-1);
+}
+.menu-container {
+    background-color: rgb(180, 168, 180);
+    border: 2px solid black;k to jam the blade to
+    margin: 90px 0px;
+}
+.menu-container h1{
+    color: rgb(252, 243, 243);
+    font-size: 55px;
+    text-shadow: 2px 2px brown;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+.menu-container p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(221, 84, 20);
+
+}
+.order-container {
+    background-color: rgb(180, 168, 180);
+    border: 2px solid black;
+    margin: 90px 0px;
+    height: 500px;
+}
+#orderonline {
+    display: flex;
+    
+}
+.order-container h1{
+    color: rgb(252, 243, 243);
+    font-size: 55px;
+    text-shadow: 2px 2px brown;
+    font-family: 'Lobster', cursive;
+    text-align: center; 
+}
+#orderonline .box {
+    border: 2px solid brown;
+background-color: burlywood;
+margin: 15px;
+padding: 3px;
+border-radius: 20px;
+height: 300px;
+}
+#orderonline .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#orderonline .box img:hover {
+    transform: scaleX(-1);
+}
+  h3{
+font-size: 24;
+font-weight: bold;
+border-radius: 50%;
+color: rgb(207, 176, 176);
+background-color: cornsilk;
+text-align: center;
+
+}
+p {
+    text-align: center;
+    color: rgb(238, 237, 231);
+}
+#reservetable{
+    font-family: 'Sora', sans-serif;
+    margin: 2px 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#reservetable::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/reservetable.jpg');
+    background-size: cover;
+    
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0,89;  
+}
+#reservetable img{
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 590px;
+    margin-top: 63px;  
+    background-size: cover; 
+}
+footer {
+    background-color: rgb(180, 168, 180);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-item {
+    margin: 34px;
+    padding: 30px;
+}
+.reservation-container h1{
+    margin-top: 85px;
+    color: white;
+    font-size: 55px;
+    text-shadow: 2px 2px brown;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+p:hover, h1:hover, h3:hover {
+    background-color: rgb(12, 12, 11);
+  }
+  
